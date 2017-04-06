@@ -6,6 +6,7 @@ service { $apache::params::pack_name:
     hasrestart => true,
     hasstatus  => true,
     # pattern    => $pack_name,
+    
 }
 
 
