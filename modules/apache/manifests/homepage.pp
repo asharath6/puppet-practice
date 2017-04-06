@@ -2,6 +2,8 @@
 #
 #
 class apache::homepage {
+
+    
     # resources
     file { '/var/www/html/index.html':
         ensure => file,

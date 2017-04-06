@@ -4,6 +4,6 @@
 class apache::params {
     # resources
     $pack_name = $facts['os']['family']?{
-    'Redhat' => 'httpd'
+    'Redhat' => 'httpd',
     'Debian' => 'apache2'
 }

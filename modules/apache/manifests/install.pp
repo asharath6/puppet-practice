@@ -6,6 +6,7 @@ class apache::install inherits apache::params{
     package { $apache::params::pack_name:
         ensure => installed,
         
+        
     }
     
 }

@@ -7,5 +7,6 @@ class apache::uninstall inherits apache::params {
     package { $apache::params::pack_name:
         ensure => purged,
         
+        
     }
 }
