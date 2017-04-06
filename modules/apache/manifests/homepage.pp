@@ -1,7 +1,7 @@
 # Class: apache::homepage
 #
 #
-class apache::homepage {
+class apache::homepage inherits apache::params{
 
     
     # resources
