@@ -1,13 +1,10 @@
 # Class: 
 #
 #
-class apache::uninstall {
+class apache::uninstall inherits apache::params {
     # resources
-    $pack_name = $facts['os']['family']?{
-    'Redhat' => 'httpd'
-    'Debian' => 'apache2'
-    }
-    package { $pack_name:
+
+    package { $apache::params::pack_name:
         ensure => purged,
         
     }
