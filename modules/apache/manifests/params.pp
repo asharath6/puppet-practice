@@ -19,3 +19,4 @@ class apache::params{
        'Debian' => 'apache2',
    }
 }
+

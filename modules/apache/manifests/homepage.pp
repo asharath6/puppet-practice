@@ -12,6 +12,7 @@ class apache::homepage inherits apache::params{
         #mode   => mode,
         #source => 'puppet:///modules/class/file.txt';
         content => file('apache/index.html'),
+        notify => Service["${apache::params::pack_name}"]
         #restart =>"",
     }
 }
